@@ -1,38 +1,52 @@
 <!-- This nav gives you links to click, which tells the router which route to use (defined in the routes constant in  AppRoutingModule) -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark"
-     ngbNav
-      [activeId]="active"
-      >
+<nav
+  class="navbar navbar-expand-lg navbar-dark bg-dark"
+  ngbNav
+  [activeId]="active"
+>
   <a class="navbar-brand" href="#">Tele Spell</a>
-  <button class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          (click)="toggleCollapse(-1)"
-          aria-label="Toggle navigation">
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarNavAltMarkup"
+    aria-controls="navbarNavAltMarkup"
+    aria-expanded="false"
+    (click)="toggleCollapse(-1)"
+    aria-label="Toggle navigation"
+  >
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="navbar-collapse"
-      [class.collapse]="collapse"
-       id="navbarNavAltMarkup" >
+  <div
+    class="navbar-collapse"
+    [class.collapse]="collapse"
+    id="navbarNavAltMarkup"
+  >
     <div class="navbar-nav">
       <a
-        *ngFor="let link of links;let indexValue = index"
+        *ngFor="let link of links; let indexValue = index"
         class="nav-item nav-link"
         [ngbNavItem]="indexValue"
-        (click)="toggleCollapse (indexValue)"
+        (click)="toggleCollapse(indexValue)"
         ngbNavLink
         [routerLink]="link.fragment"
-        routerLinkActive="active">
+        routerLinkActive="active"
+      >
         {{ link.title }}
       </a>
     </div>
   </div>
-  
 </nav>
 <!-- The routed views render in the <router-outlet>-->
 <div class="container">
   <router-outlet></router-outlet>
+</div>
+<hr />
+<div class="mastfoot">
+  <div class="inner">
+    <p>
+      Created by
+      <a href="https://me.vpv.io">Venkateswara Venkatraman Prasanna</a>.
+    </p>
+  </div>
 </div>

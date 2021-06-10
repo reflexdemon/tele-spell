@@ -1,23 +1,72 @@
 <div class="inner cover">
-    <h1 class="cover-heading">Spell whatever you wanted to spell.</h1>
-    <p class="lead">
-        I know how it is to have long name and had to speak it over phone and it is so difficult to
-         speak to foreign nation over phone. So,
-        I have given this tool for everyone to be able to use this tool to speak over the phone.
-    </p>
-    <div class="lead">
-
+  <h1 class="cover-heading">Spell whatever you wanted to spell.</h1>
+  <p class="lead">
+    I know how it is to have long name and had to speak it over phone and it is
+    so difficult to speak to foreign nation over phone. So, I have given this
+    tool for everyone to be able to use this tool to speak over the phone.
+  </p>
+  <div class="lead">
     <form action="/" method="get">
-        <input name="toSpell" type="text" (value)="toSpell" class="user-input-input">
-        <button type="submit" class="btn btn-sm btn-default ">
-            Get Speakable
-        </button>
+      <input
+        name="toSpell"
+        type="text"
+        [(ngModel)]="toSpell"
+        class="user-input-input form-control"
+      />
+      <button
+        type="submit"
+        class="btn btn-sm btn-default"
+        (click)="getSpeakable()"
+      >
+        Get Speakable
+      </button>
     </form>
+    <br />
+    <div>{{ message }}</div>
 
-    <div> {{ message }}</div>
-
-    <button  type="button" (click)="speak()" class="btn btn-success" *ngIf="speechSupported">
-        Speak
-    </button>
+    <div *ngIf="speakable" align="center">
+      <table class="table-width">
+        <tr *ngFor="let name of speakable">
+          <td class="firstLetter">{{ name }}</td>
+        </tr>
+      </table>
     </div>
+    <br />
+    <hr />
+    <label> Voice:</label>
+    <input
+      type="text"
+      class="form-control"
+      [(ngModel)]="speaker"
+      [ngbTypeahead]="searchVoice"
+      [inputFormatter]="inputVoiceFormatter"
+      [resultFormatter]="resultVoiceFormatter"
+      [editable]="false"
+    />
+    <label> Rate:</label>
+    <select [(ngModel)]="rate" class="form-control">
+      <option *ngFor="let r of rates" [value]="r">
+        {{ r }}
+      </option>
+    </select>
+
+    <button
+      type="button"
+      (click)="speak()"
+      class="btn btn-success"
+      *ngIf="speechSupported"
+    >
+      Speak
+    </button>
+    <button
+      type="button"
+      (click)="stop()"
+      class="btn btn-danger"
+      *ngIf="speechSupported"
+    >
+      Stop
+    </button>
+    <hr />
+    {{ speaker | json }}
+  </div>
 </div>

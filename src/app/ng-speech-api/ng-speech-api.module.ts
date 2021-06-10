@@ -2,14 +2,10 @@ import { SpeechService } from './speech-service.service';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-
-
 @NgModule({
   declarations: [],
-  imports: [
-    CommonModule
-  ],
+  imports: [CommonModule],
   providers: [SpeechService],
-  exports: []
+  exports: [],
 })
-export class NgSpeechApiModule { }
+export class NgSpeechApiModule {}

@@ -94,4 +94,14 @@ export class SpellService {
     }
     return '';
   }
+
+  public getSpellable(toSpell: string): string[] {
+    let spellable: string[] = [];
+
+    if (toSpell && toSpell.length) {
+      [...toSpell.toUpperCase()].forEach(ch => spellable.push(this.getWordFromChar(ch)));
+    }
+
+    return spellable;
+  }
 }
