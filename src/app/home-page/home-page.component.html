@@ -1,1 +1,23 @@
-<p>home-page works!</p>
+<div class="inner cover">
+    <h1 class="cover-heading">Spell whatever you wanted to spell.</h1>
+    <p class="lead">
+        I know how it is to have long name and had to speak it over phone and it is so difficult to
+         speak to foreign nation over phone. So,
+        I have given this tool for everyone to be able to use this tool to speak over the phone.
+    </p>
+    <div class="lead">
+
+    <form action="/" method="get">
+        <input name="toSpell" type="text" (value)="toSpell" class="user-input-input">
+        <button type="submit" class="btn btn-sm btn-default ">
+            Get Speakable
+        </button>
+    </form>
+
+    <div> {{ message }}</div>
+
+    <button  type="button" (click)="speak()" class="btn btn-success" *ngIf="speechSupported">
+        Speak
+    </button>
+    </div>
+</div>
