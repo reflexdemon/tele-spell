@@ -8,7 +8,7 @@ export class SpeechService {
   public voices: SpeechSynthesisVoice[];
   public rates: number[];
 
-  public selectedVoice: SpeechSynthesisVoice | null;
+  public selectedVoice: SpeechSynthesisVoice;
   public selectedRate: number;
 
   constructor() {
