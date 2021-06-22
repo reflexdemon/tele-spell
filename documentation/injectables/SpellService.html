@@ -1,0 +1,493 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>tele-spell documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">tele-spell documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Injectables</li>
+  <li>SpellService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/spell-api/spell.service.ts</code>
+        </p>
+
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#spellingMap">spellingMap</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getSpellable">getSpellable</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getWordFromChar">getWordFromChar</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor()</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="11" class="link-to-prism">src/app/spell-api/spell.service.ts:11</a></div>
+                            </td>
+                        </tr>
+
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getSpellable"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Public</span>
+                            getSpellable
+                        </b>
+                        <a href="#getSpellable"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getSpellable(toSpell: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="98"
+                            class="link-to-prism">src/app/spell-api/spell.service.ts:98</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>toSpell</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>string[]</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getWordFromChar"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Public</span>
+                            getWordFromChar
+                        </b>
+                        <a href="#getWordFromChar"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getWordFromChar(ch: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="91"
+                            class="link-to-prism">src/app/spell-api/spell.service.ts:91</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>ch</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+            <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="spellingMap"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            spellingMap</b>
+                            <a href="#spellingMap"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/SpellingMap.html" target="_self" >SpellingMap</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="11" class="link-to-prism">src/app/spell-api/spell.service.ts:11</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable } from &#x27;@angular/core&#x27;;
+
+interface SpellingMap {
+	[key: string]: string;
+}
+
+@Injectable({
+  providedIn: &#x27;root&#x27;
+})
+export class SpellService {
+  public spellingMap: SpellingMap;
+  constructor() { 
+    this.spellingMap &#x3D; Object.create( null );
+    this.spellingMap[ &#x27;A&#x27; ] &#x3D; &#x27;Alfa&#x27;;
+    this.spellingMap[ &#x27;B&#x27; ] &#x3D; &#x27;Bravo&#x27;;
+    this.spellingMap[ &#x27;C&#x27; ] &#x3D; &#x27;Charlie&#x27;;
+    this.spellingMap[ &#x27;D&#x27; ] &#x3D; &#x27;Delta&#x27;;
+    this.spellingMap[ &#x27;E&#x27; ] &#x3D; &#x27;Echo&#x27;;
+    this.spellingMap[ &#x27;F&#x27; ] &#x3D; &#x27;Foxtrot&#x27;;
+    this.spellingMap[ &#x27;G&#x27; ] &#x3D; &#x27;Golf&#x27;;
+    this.spellingMap[ &#x27;H&#x27; ] &#x3D; &#x27;Hotel&#x27;;
+    this.spellingMap[ &#x27;I&#x27; ] &#x3D; &#x27;India&#x27;;
+    this.spellingMap[ &#x27;J&#x27; ] &#x3D; &#x27;Juliett&#x27;;
+    this.spellingMap[ &#x27;K&#x27; ] &#x3D; &#x27;Kilo&#x27;;
+    this.spellingMap[ &#x27;L&#x27; ] &#x3D; &#x27;Lima&#x27;;
+    this.spellingMap[ &#x27;M&#x27; ] &#x3D; &#x27;Mike&#x27;;
+    this.spellingMap[ &#x27;N&#x27; ] &#x3D; &#x27;November&#x27;;
+    this.spellingMap[ &#x27;O&#x27; ] &#x3D; &#x27;Oscar&#x27;;
+    this.spellingMap[ &#x27;P&#x27; ] &#x3D; &#x27;Papa&#x27;;
+    this.spellingMap[ &#x27;Q&#x27; ] &#x3D; &#x27;Quebec&#x27;;
+    this.spellingMap[ &#x27;R&#x27; ] &#x3D; &#x27;Romeo&#x27;;
+    this.spellingMap[ &#x27;S&#x27; ] &#x3D; &#x27;Sierra&#x27;;
+    this.spellingMap[ &#x27;T&#x27; ] &#x3D; &#x27;Tango&#x27;;
+    this.spellingMap[ &#x27;U&#x27; ] &#x3D; &#x27;Uniform&#x27;;
+    this.spellingMap[ &#x27;V&#x27; ] &#x3D; &#x27;Victor&#x27;;
+    this.spellingMap[ &#x27;W&#x27; ] &#x3D; &#x27;Whiskey&#x27;;
+    this.spellingMap[ &#x27;X&#x27; ] &#x3D; &#x27;X-ray&#x27;;
+    this.spellingMap[ &#x27;Y&#x27; ] &#x3D; &#x27;Yankee&#x27;;
+    this.spellingMap[ &#x27;Z&#x27; ] &#x3D; &#x27;Zulu&#x27;;
+    
+    //Numbers
+    this.spellingMap[ &#x27;0&#x27; ] &#x3D; &#x27;Zero&#x27;;
+    this.spellingMap[ &#x27;1&#x27; ] &#x3D; &#x27;One&#x27;;
+    this.spellingMap[ &#x27;2&#x27; ] &#x3D; &#x27;Two&#x27;;
+    this.spellingMap[ &#x27;3&#x27; ] &#x3D; &#x27;Three&#x27;;
+    this.spellingMap[ &#x27;4&#x27; ] &#x3D; &#x27;Four&#x27;;
+    this.spellingMap[ &#x27;5&#x27; ] &#x3D; &#x27;Five&#x27;;
+    this.spellingMap[ &#x27;6&#x27; ] &#x3D; &#x27;Six&#x27;;
+    this.spellingMap[ &#x27;7&#x27; ] &#x3D; &#x27;Seven&#x27;;
+    this.spellingMap[ &#x27;8&#x27; ] &#x3D; &#x27;Eight&#x27;;
+    this.spellingMap[ &#x27;9&#x27; ] &#x3D; &#x27;Nine&#x27;;
+    
+    //Special Characters
+    this.spellingMap[ &#x27; &#x27;] &#x3D; &#x27;Space&#x27;;
+    this.spellingMap[ &#x27;.&#x27; ] &#x3D; &#x27;Dot&#x27;;
+    this.spellingMap[ &#x27;,&#x27; ] &#x3D; &#x27;Comma&#x27;;
+    this.spellingMap[ &#x27;;&#x27; ] &#x3D; &#x27;Semicolon&#x27;;
+    this.spellingMap[ &#x27;:&#x27; ] &#x3D; &#x27;Colon&#x27;;
+    this.spellingMap[ &#x27;?&#x27; ] &#x3D; &#x27;Question Mark&#x27;;
+    this.spellingMap[ &#x27;!&#x27; ] &#x3D; &#x27;Exclamation Mark&#x27;;
+    this.spellingMap[ &#x27;@&#x27; ] &#x3D; &#x27;At Sign&#x27;;
+    this.spellingMap[ &#x27;&amp;&#x27; ] &#x3D; &#x27;Ampersand&#x27;;
+    this.spellingMap[ &#x27;&quot;&#x27; ] &#x3D; &#x27;Double Quotation Mark&#x27;;
+    this.spellingMap[ &#x27;\&#x27;&#x27; ] &#x3D; &#x27;Apostrophe&#x27;;
+    this.spellingMap[ &#x27;-&#x27; ] &#x3D; &#x27;Dash&#x27;;
+    this.spellingMap[ &#x27;/&#x27; ] &#x3D; &#x27;Forward Slash&#x27;;
+    this.spellingMap[ &#x27;\\&#x27; ] &#x3D; &#x27;Backslash&#x27;;
+    this.spellingMap[ &#x27;(&#x27; ] &#x3D; &#x27;Left Round Bracket&#x27;;
+    this.spellingMap[ &#x27;)&#x27; ] &#x3D; &#x27;Right Round Bracket&#x27;;
+    this.spellingMap[ &#x27;[&#x27; ] &#x3D; &#x27;Left Square Bracket&#x27;;
+    this.spellingMap[ &#x27;]&#x27; ] &#x3D; &#x27;Right Square Bracket&#x27;;
+    this.spellingMap[ &#x27;{&#x27; ] &#x3D; &#x27;Left Curly Bracket&#x27;;
+    this.spellingMap[ &#x27;}&#x27; ] &#x3D; &#x27;Right Curly Bracket&#x27;;
+    this.spellingMap[ &#x27;&lt;&#x27; ] &#x3D; &#x27;Left Angle Bracket&#x27;;
+    this.spellingMap[ &#x27;&gt;&#x27; ] &#x3D; &#x27;Right Angle Bracket&#x27;;
+    this.spellingMap[ &#x27;|&#x27; ] &#x3D; &#x27;Vertical Bar&#x27;;
+    this.spellingMap[ &#x27;°&#x27; ] &#x3D; &#x27;Degree Symbol&#x27;;
+    this.spellingMap[ &#x27;*&#x27; ] &#x3D; &#x27;Asterisk&#x27;;
+    this.spellingMap[ &#x27;+&#x27; ] &#x3D; &#x27;Plus Sign&#x27;;
+    this.spellingMap[ &#x27;&#x3D;&#x27; ] &#x3D; &#x27;Equal Sign&#x27;;
+    this.spellingMap[ &#x27;#&#x27; ] &#x3D; &#x27;Number Sign&#x27;;
+    this.spellingMap[ &#x27;§&#x27; ] &#x3D; &#x27;Section Sign&#x27;;
+    this.spellingMap[ &#x27;$&#x27; ] &#x3D; &#x27;Dollar Sign&#x27;;
+    this.spellingMap[ &#x27;€&#x27; ] &#x3D; &#x27;Euro Sign&#x27;;
+    this.spellingMap[ &#x27;~&#x27; ] &#x3D; &#x27;Tilde&#x27;;
+    this.spellingMap[ &#x27;_&#x27; ] &#x3D; &#x27;Underscore&#x27;;
+    this.spellingMap[ &#x27;%&#x27; ] &#x3D; &#x27;Percent Sign&#x27;;
+    this.spellingMap[ &#x27;^&#x27; ] &#x3D; &#x27;Caret&#x27;;
+  }
+
+  public getWordFromChar(ch: string): string {
+    if (ch &amp;&amp; (ch in this.spellingMap)) {
+      return this.spellingMap[ch];
+    }
+    return &#x27;&#x27;;
+  }
+
+  public getSpellable(toSpell: string): string[] {
+    let spellable: string[] &#x3D; [];
+
+    if (toSpell &amp;&amp; toSpell.length) {
+      [...toSpell.toUpperCase()].forEach(ch &#x3D;&gt; spellable.push(this.getWordFromChar(ch)));
+    }
+
+    return spellable;
+  }
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'SpellService.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
