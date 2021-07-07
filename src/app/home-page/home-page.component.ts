@@ -31,7 +31,7 @@ export class HomePageComponent implements OnInit {
           .slice(0, 10)
       )
     );
-  speaker: SpeechSynthesisVoice | null;
+  speaker: SpeechSynthesisVoice;
   rate: number = 1;
   constructor(private speech: SpeechService, private spell: SpellService) {
     this.speaker = this.speech.selectedVoice;
